@@ -1103,6 +1103,11 @@ let
 
   ciopfs = callPackage ../tools/filesystems/ciopfs { };
 
+  citrix_receiver = callPackage ../applications/networking/remote/citrix-receiver {
+    #inherit pkgs;
+    #pkgs_i686 = pkgsi686Linux;
+  };
+
   cmst = callPackage ../tools/networking/cmst { };
 
   colord = callPackage ../tools/misc/colord { };
