@@ -6724,6 +6724,8 @@ with pkgs;
 
   strace = callPackage ../development/tools/misc/strace { };
 
+  studio3t = callPackage ../development/tools/database/studio3t { };
+
   swarm = callPackage ../development/tools/analysis/swarm { };
 
   swig1 = callPackage ../development/tools/misc/swig { };
